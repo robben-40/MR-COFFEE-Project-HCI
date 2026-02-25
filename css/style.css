@@ -1,0 +1,64 @@
+:root{
+    /* colors */
+    --background: #EFEFEF;
+    --blue: #2E69BF;
+
+}
+
+@font-face {
+    font-family:'Baloo Da Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Baloo Da Regular'), url('../assets/baloo-da-webfont/BalooDa-Regular.woff') format('woff');
+}
+
+body{
+    background-color: var(--background);
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+
+    gap:2vw;
+    width: auto;
+    background-color: var(--background);
+    border-bottom: 2px solid rgba(129, 129, 129, 0.432);
+
+    z-index: 1000;
+
+}
+
+.navbar img{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+
+.navbar a{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-family: 'Baloo Da Regular';
+    color: var(--blue);
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.navbar a:hover{
+    transform: scale(1.1);
+    color: black;
+}
+
+.blue{
+    color: #2E69BF;
+}

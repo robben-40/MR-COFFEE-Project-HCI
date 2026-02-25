@@ -1,0 +1,213 @@
+h1{
+    font-family: baloo da regular;
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+.cart{
+    position: fixed;
+    padding: 5px;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    border: 1px solid #47474756;
+    width: 50px;
+    height: 50px;
+    right: 2vw;
+    bottom: 2vh;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.1s;
+}
+
+.cart:hover{
+    transform: scale(1.1);
+}
+
+
+.cart-amount{
+    font-family: 'baloo da 2';
+    display: none;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background-color: rgba(255, 0, 0, 0.815);
+    color: white;
+    font-weight: 600;
+    border-radius: 100px;
+    padding: 2px 6px;
+    
+}
+
+.cart img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.menu-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.sidebar {
+    width: 200px;
+    top: 200px;
+    position: sticky;
+    height: fit-content;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* background: white; */
+    border-right: 1px solid #000000;
+    padding: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.sidebar a {
+    color: var(--blue);
+    font-size: 16px;
+    display: block;
+    padding: 8px 0;
+    transition: color 0.3s;
+    font-family: baloo da regular;
+}
+
+.sidebar a:hover {
+    color: #000000;
+}
+
+.menu-content {
+    flex: 1;
+}
+
+.category-section {
+    margin-bottom: 50px;
+}
+
+.category-title {
+    font-size: 28px;
+    color: #000000;
+    font-weight: normal;
+    margin-bottom: 25px;
+    font-family: 'Baloo Da regular' ;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.menu-item {
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.item-image {
+    align-content: center;
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.item-image img {
+    width: 100%;
+    border-radius: 20px;
+    max-height: inherit;
+}
+
+.item-name {
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--blue);
+    margin-bottom: 8px;
+    font-family: baloo da regular;
+}
+
+.item-description {
+    font-family: 'baloo da 2';
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-price {
+    font-family: baloo da regular;
+    font-size: 18px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.add-button {
+    background: var(--blue);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-button:hover {
+    background: #1a4a8a;
+}
+
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        top: 0px;
+    }
+    
+    .sidebar ul {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 15px 20px;
+        background: white;
+        border-radius: 20px;
+        border: none;
+    }
+    
+    .sidebar li {
+        margin-bottom: 0;
+        white-space: nowrap;
+    }
+    
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,461 @@
+.banner {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20vh;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, var(--background) 100%);
+    z-index: 2;
+}
+
+.banner img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.banner p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: baloo da regular;
+    font-size: 18px;
+    z-index: 2;
+    text-align: center;
+    width: 90%;
+    line-height: 1.2;
+}
+
+.best-sellers {
+    background-color: white;
+    padding: 20px;
+    border-radius: 2rem;
+    font-family: baloo da regular;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.24);
+}
+
+.best-sellers h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 70%;
+    height: 70%;
+    max-width: 300px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.card h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.card button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #474747;
+}
+
+.rewards-section {
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    font-family: baloo da regular;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.promo-card {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.281);
+    text-align: center;
+    overflow: hidden;
+}
+
+.promo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.promo-text {
+    text-align: center;
+    width: 90%;
+}
+
+.promo-text h2 {
+    font-size: 28px;
+    margin: 0 0 15px 0;
+    font-weight: normal;
+}
+
+.promo-text p {
+    margin-top: 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.promo-text a {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-bottom: 2px solid black;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.promo-text a:hover {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 15px;
+}
+
+.aboutus-section {
+    background-image: url(../assets/aboutusbg.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10%;
+    font-family: baloo da regular;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    gap: 30px;
+}
+
+.aboutus-text {
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    order: 2;
+}
+
+.aboutus-text p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.aboutus-text a {
+    padding: 10px 15px;
+    border-bottom: 2px solid black;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.aboutus-text a:hover {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 15px;
+}
+
+.aboutus-card {
+    width: 80%;
+    max-width: 300px;
+    font-size: 16px;
+    text-align: center;
+    order: 1;
+}
+
+.aboutus-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    margin: 10px 0;
+}
+
+.aboutus-card .title {
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .banner {
+        margin-bottom: 30vh;
+    }
+    
+    .banner img {
+        height: 350px;
+    }
+    
+    .banner p {
+        font-size: 32px;
+        width: 70%;
+    }
+    
+    .banner::after {
+        height: 80px;
+    }
+    
+    .best-sellers {
+        width: 85%;
+        padding: 30px;
+        border-radius: 3rem;
+    }
+    
+    .best-sellers h2 {
+        font-size: 32px;
+    }
+    
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .card {
+        width: 45%;
+        max-width: none;
+    }
+    
+    .card img {
+        height: 140px;
+    }
+    
+    .rewards-section {
+        flex-direction: row;
+        gap: 50px;
+        margin-top: 12%;
+        padding: 30px;
+    }
+    
+    .promo-card {
+        width: 45%;
+        height: 250px;
+        border-radius: 50px;
+    }
+    
+    .promo-text {
+        width: 45%;
+        text-align: left;
+    }
+    
+    .promo-text h2 {
+        font-size: 36px;
+    }
+    
+    .promo-text p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    .promo-text a {
+        font-size: 18px;
+    }
+    
+    .aboutus-section {
+        flex-direction: row;
+        gap: 50px;
+        padding: 40px 20px;
+        margin-top: 12%;
+    }
+    
+    .aboutus-text {
+        width: 50%;
+        text-align: right;
+        font-size: 18px;
+        order: 1;
+    }
+    
+    .aboutus-text p {
+        margin-bottom: 30px;
+    }
+    
+    .aboutus-card {
+        width: 40%;
+        order: 2;
+    }
+    
+    .aboutus-card img {
+        border-radius: 40px;
+        max-width: 300px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .banner {
+        margin-bottom: 30vh;
+    }
+    
+    .banner img {
+        height: 450px;
+    }
+    
+    .banner p {
+        position: absolute;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 10% 0 0 40vw;
+        font-size: 52px;
+        width: auto;
+        text-align: left;
+    }
+    
+    .banner::after {
+        height: 100px;
+    }
+    
+    .best-sellers {
+        width: 80%;
+        border-radius: 5rem;
+    }
+    
+    .best-sellers h2 {
+        font-size: 40px;
+    }
+    
+    .card-container {
+        gap: 50px;
+        margin-bottom: 60px;
+        align-content: center;
+    }
+    
+    .card {
+        margin: 0 auto;
+        width: 13%;
+        min-width: 200px;
+    }
+    
+    .card img {
+        height: 300px;
+        min-height: 140px;
+    }
+    
+    .rewards-section {
+        gap: 18%;
+        margin-top: 15%;
+    }
+    
+    .promo-card {
+        width: 30%;
+        height: 40%;
+        min-height: 300px;
+        border-radius: 70px;
+    }
+    
+    .promo-text {
+        width: 30%;
+    }
+    
+    .promo-text h2 {
+        font-size: 50px;
+    }
+    
+    .promo-text p {
+        font-size: 20px;
+        margin-bottom: 35%;
+    }
+    
+    .promo-text a {
+        font-size: 20px;
+    }
+    
+    .aboutus-section {
+        gap: 10%;
+        margin-top: 15%;
+    }
+    
+    .aboutus-text {
+        width: 37%;
+        font-size: 20px;
+    }
+    
+    .aboutus-text p {
+        margin-bottom: 15%;
+    }
+    
+    .aboutus-card {
+        width: 30%;
+        font-size: 18px;
+    }
+    
+    .aboutus-card img {
+        border-radius: 50px;
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .card-container {
+        justify-content: space-between;
+        max-width: 1400px;
+        margin: 5vh auto 10vh;
+    }
+    
+    .card {
+        width: 180px;
+    }
+}
+
