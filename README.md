@@ -2,4 +2,4 @@
 
 **MR.COFFEE** is a web-based user interface designed as the final project for my Human-Computer Interaction (HCI) course.
 
-<img width="1899" height="867" alt="image" src="https://github.com/user-attachments/assets/1094561f-c50a-4e9e-8c13-74240f0845b8" />
+<img width="1902" height="868" alt="image" src="https://github.com/user-attachments/assets/68abf5e2-594e-4967-807a-8ed03e44d8d1" />
